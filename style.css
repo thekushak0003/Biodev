@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    /* background-color: rgb(0, 255, 68); */
+    display: flex;
+    align-items: flex-start;
+    height: 12vh;
+    width: 100%;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    background-color: #111;
+    z-index: 10;
+}
+
+nav h1 {
+    font-size: 1.6vw;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h4 {
+    font-size: 0.73vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1.6vw;
+}
+
+.nav-part2 h5 {
+    margin-bottom: 0.5vw;
+    /* background-color: red; */
+    display: none;
+    overflow: hidden;
+}
+
+.nav-part2 h5 span {
+    font-size: 0.77vw;
+    font-weight: 400;
+    transform: translateY(15px);
+    display: inline-block;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #00ff00; 
+}
+
+.nav-button:before,
+.nav-button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #00ff00;
+    transition: transform 0.3s ease;
+}
+
+.nav-button:before {
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.nav-button:after {
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.nav-button:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-button:hover:after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/* Styles for the "LET'S TALK" button */
+.lets-talk {
+    margin-left: auto; 
+    background-color: #00ff00; 
+    color: #111; 
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.lets-talk:hover {
+    background-color: #111; 
+    color: #00ff00; 
+    transform: scale(1.05);
+}
+
+.lets-talk:before,
+.lets-talk:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #00ff00;
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.lets-talk:before {
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+}
+
+.lets-talk:after {
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.lets-talk:hover:before {
+    transform: scaleX(1);
+}
+
+.lets-talk:hover:after {
+    transform: scaleX(1);
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #8BC34A, #43c23d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2.1vh;
+    border-color: #040404;
+}
+
+#page1 h1 {
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+}
+
+#page1 h1 svg {
+    height: 6vw;
+    border-radius: 50%;
+    width: 6vw;
+
+    background-color: #070807;
+}
+
+#page1 p {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3vh;
+    font-size: 1.5vw;
+    color: #040404;
+}
+
+#page1-something {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1-something h4 {
+    font-weight: 400;
+    font-size: 1.1vw;
+    /* text-transform: lowercase; */
+    margin-top: 0.5vw;
+    margin:1vw
+    padding: 9px 18px;
+    border: 1px solid hsl(0, 0%, 3%);
+    border-radius: 5px;
+}
+
+/* Basic button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #f0ebeb;
+    border-color: #040404;
+    background-color: #1FBA0A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px; 
+  }
+  
+  
+  .button:last-child {
+    margin-right: 0;
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    background-color: #1FBA0A;
+    transform: translateY(-2px);
+  }
+/* Border animation on hover */
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    transform: scale(0); 
+    transition: transform 0.3s ease; 
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  .button:hover::before {
+    transform: scale(1); 
+    animation: borderMove 1.5s linear infinite; 
+  }
+  
+  /* Moving border animation */
+  @keyframes borderMove {
+    0% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 2px, 0% 2px);
+    }
+    25% {
+      clip-path: polygon(98% 0%, 100% 0%, 100% 100%, 98% 100%);
+    }
+    50% {
+      clip-path: polygon(0% 98%, 100% 98%, 100% 100%, 0% 100%);
+    }
+    75% {
+      clip-path: polygon(0% 0%, 2px 0%, 2px 100%, 0% 100%);
+    }
+    100% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 2px, 0% 2px);
+    }
+  }  
+  
+#page1-something h4:nth-last-child(2) {
+    /* background-color: red; */
+    border: none;
+    padding: 2px;
+}
+
+#moving-div {
+    /* background-color: red; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 44%;
+    border-radius: 50%;
+    border-color: #fff;    
+    
+}
+
+#moving-div .move {
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img {
+    height: 1vw;
+    margin: 0 1.2vw;
+}
+#moving-div h4{
+    
+    font-size: 1.4vw;
+    font-weight: 300;
+}
+@keyframes mobe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+#blur-left {
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, #6c8e5b, transparent);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#blur-right {
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, transparent, #6c8e5b);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+
+
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #8BC34A, #43c23d);
+    position: relative;
+    padding: 0vw 10.5vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    border-top: 2.1px solid #333;
+    justify-content: space-between;
+}
+/* Style for the questions */
+.question {
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: px;
+}
+
+.question:hover {
+    color: #90EE90; 
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+/* Style for the quote */
+.quote {
+    color: #fff;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+
+.quote:hover {
+    color: #e2e292; 
+    transform: scale(1.20);
+}
+
+#page2-left {
+    height: 100%;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+    border: #000;
+}
+
+.image-container {
+    width: 300px; 
+    height: 200px; 
+    overflow: hidden; 
+    position: relative;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Style the image */
+.image-container img {
+    width: 100%; 
+    height: 100%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover effect */
+.image-container:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+#page2-left h2 {
+    font-size: 2.1vw;
+    font-weight: 200;
+}
+
+#page2-left h5 {
+    width: 75%;
+    font-weight: 300;
+    font-size: 1.4vw;
+    font-style: italic;
+}
+
+#page2-right {
+
+    height: 85%;
+    width: 50%;
+    background-color: #333;
+    border: #000;
+    border-style: solid;
+    border-radius: 5px;
+}
+#page2-right h2{
+    font-size: 1.4vw;
+    font-weight: 300;
+
+}
+
+.right-elem {
+    position: relative;
+    background-color: #fff;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    border-bottom: 1px solid #333;
+}
+
+.right-elem h2 {
+    text-align: center;    
+    font-size: 2.9vw;
+    font-weight: 200;
+}
+
+.right-elem img {
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    scale: 0;
+}
+
+#biofuels-container {
+    background: linear-gradient(135deg, #8BC34A, #2cb825);
+    padding: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bioFadeIn 2s ease-in-out;
+    box-sizing: border-box;
+    border-top: 2.1px solid #333;
+    
+}
+
+#biofuels-container header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#biofuels-container header p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+#biofuels-container .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height:100%;
+}
+
+#biofuels-container .info-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s, background-color 0.3s;    
+    transform-style: preserve-3d; /* Ensures children are rendered in 3D */
+}
+
+#biofuels-container .info-card:hover {
+    
+    transform: rotateY(0deg) rotateX(10deg); /* Rotates the card in 3D space */
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.644); /* Darker and larger shadow */
+}
+
+#biofuels-container footer {
+    margin-top: 30px;
+}
+
+#biofuels-container #learn-more {
+    background-color: white;
+    color: #43c23d;
+    border: #040404;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#biofuels-container #learn-more:hover {
+    background-color: #43c23d;
+    color: white;
+    border: #040404;
+    border-style: solid;
+}
+
+@keyframes bioFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
